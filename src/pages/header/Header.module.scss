@@ -1,0 +1,54 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  .content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-items: center;
+    align-items: center;
+    padding: 18px 0;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .menu {
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 24px;
+
+      li {
+        a {
+          color: #081828;
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: capitalize;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  .cta {
+    button {
+      background-color: #ff6b81;
+      color: #ffffff;
+      padding: 12px 30px;
+      text-transform: capitalize;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
