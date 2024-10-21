@@ -1,0 +1,29 @@
+@mixin btn($bgColor: #ff6b81, $color: #ffffff, $borderColor: none) {
+  background-color: $bgColor;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $color;
+  padding: 13px 30px;
+
+  @if ($borderColor != none) {
+    border: 2px solid $borderColor;
+    padding: 11px 30px;
+  }
+}
+
+@mixin btnHover($bgColor: #081828, $color: #ffffff) {
+  &:hover {
+    background-color: $bgColor;
+    color: $color;
+  }
+}
+
+@mixin btnIcon() {
+  display: flex;
+  gap: 4px;
+}
