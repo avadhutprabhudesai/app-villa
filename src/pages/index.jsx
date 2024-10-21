@@ -1,6 +1,7 @@
 import Head from "next/head";
 import localFont from "next/font/local";
-import Header from "./header/Header";
+import Header from "../components/header/Header";
+import Banner from "@/components/banner/Banner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,6 +25,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
+        <Banner />
       </main>
     </>
   );

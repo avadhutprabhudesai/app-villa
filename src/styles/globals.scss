@@ -21,7 +21,20 @@ a {
   text-decoration: none;
 }
 
-.width-limiter {
+.container {
   max-width: 1140px;
   width: 100%;
+
+  @media screen and (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media screen and (min-width: 991px) {
+    max-width: 960px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+  }
 }

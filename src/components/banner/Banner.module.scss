@@ -1,0 +1,92 @@
+@import "@/styles/mixins.scss";
+
+.banner {
+  background-color: #ff6b81;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 144px 12px;
+  color: #ffffff;
+
+  // this is just to test sticky behavior of the header
+  // min-height: 2000px;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @media screen and (max-width: 991px) {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 50px;
+        text-shadow: 0px 3px 8px #00000017;
+        text-transform: capitalize;
+        @media screen and (max-width: 991px) {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 38px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        @media screen and (max-width: 991px) {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+
+      .btnAppStore {
+        @include btn($bgColor: #ffffff, $color: #ff6b81, $borderColor: none);
+        @include btnHover($bgColor: #081828, $color: #ffffff);
+        @include btnIcon();
+      }
+
+      .btnGooglePlay {
+        @include btn($bgColor: #ff6b81, $color: #ffffff, $borderColor: #ffffff);
+        @include btnHover($bgColor: #ffffff, $color: #ff6b81);
+        @include btnIcon();
+      }
+    }
+
+    .image {
+      width: 100%;
+      display: inline-block;
+
+      img {
+        width: 100%;
+      }
+
+      // @media screen and (min-width: 0px) and (max-width: 425px) {
+      //   width: 250px;
+      // }
+      // @media screen and (min-width: 426px) {
+      //   width: 450px;
+      // }
+    }
+  }
+}
