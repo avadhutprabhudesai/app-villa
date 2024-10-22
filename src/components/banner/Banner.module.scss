@@ -1,4 +1,5 @@
 @import "@/styles/mixins.scss";
+@import "@/styles/animations.scss";
 
 .banner {
   background-color: #ff6b81;
@@ -32,6 +33,7 @@
         width: 100%;
         text-align: center;
       }
+      animation: backInLeft 1.5s cubic-bezier(0.71, 0, 0.48, 1.12) 0.1s 1;
 
       h1 {
         font-size: 38px;
@@ -76,6 +78,7 @@
     .image {
       width: 100%;
       display: inline-block;
+      animation: backInRight 1.5s cubic-bezier(0.71, 0, 0.48, 1.12) 0.1s 1;
 
       img {
         width: 100%;

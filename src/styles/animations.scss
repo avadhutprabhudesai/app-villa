@@ -1,0 +1,28 @@
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  65% {
+    transform: scale(1);
+  }
+}
+
+@keyframes backInRight {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  65% {
+    transform: scale(1);
+  }
+}
