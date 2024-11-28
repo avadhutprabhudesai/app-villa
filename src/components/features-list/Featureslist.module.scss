@@ -8,6 +8,10 @@
   padding: 100px 0;
   background-color: #f9f9f9;
 
+  @media screen and (max-width: 991px) {
+    padding: 20px;
+  }
+
   .content {
     display: grid;
     text-align: center;
@@ -55,7 +59,7 @@
     margin-top: 60px;
 
     @media screen and (max-width: 991px) {
-      grid-template-columns: 40% 40%;
+      grid-template-columns: 1fr 1fr;
       justify-content: center;
     }
     @media screen and (max-width: 560px) {

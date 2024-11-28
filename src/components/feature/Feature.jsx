@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Feature.module.scss";
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
+import IconBox from "../icon-box/IconBox";
 
 const Feature = ({ title, description, icon }) => {
   const featureRef = useRef(null);
@@ -40,9 +41,7 @@ const Feature = ({ title, description, icon }) => {
       className={classNames(styles.feature, { [styles.animate]: animate })}
       ref={featureRef}
     >
-      <div className={styles.icon}>
-        <FontAwesomeIcon icon={icon} />
-      </div>
+      <IconBox icon={icon} />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
     </div>

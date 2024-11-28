@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Header from "../components/header/Header";
 import Banner from "@/components/banner/Banner";
 import FeaturesList from "@/components/features-list/FeaturesList";
+import Overview from "@/components/overview/Overview";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +29,7 @@ export default function Home() {
         <Header />
         <Banner />
         <FeaturesList />
+        <Overview />
       </main>
     </>
   );
