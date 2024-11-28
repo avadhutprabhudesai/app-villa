@@ -1,0 +1,79 @@
+.plan {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 3px 5px #00000017;
+    transform: translateY(-10px);
+  }
+
+  .details {
+    display: grid;
+    padding: 25px;
+    border-bottom: 1px solid #eee;
+
+    .name {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .price {
+      padding: 30px 0;
+
+      .priceBold {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+      }
+    }
+
+    .button {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 12px 30px;
+      font-size: 14px;
+      font-weight: 600;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in;
+
+      &:hover {
+        background-color: #ff6b81;
+      }
+    }
+
+    .description {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+
+  .features {
+    padding: 25px;
+    p {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 25px;
+
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}
