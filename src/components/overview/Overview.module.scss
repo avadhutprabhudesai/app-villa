@@ -1,0 +1,131 @@
+.overview {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #ffffff;
+
+  @media screen and (max-width: 991px) {
+    padding: 50px;
+  }
+  @media screen and (max-width: 560px) {
+    padding: 20px;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "l-text r-image"
+      "l-image r-text";
+    row-gap: 70px;
+    column-gap: 30px;
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "l-text"
+        "r-image"
+        "l-image"
+        "r-text";
+      row-gap: 30px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 25px;
+
+      h2 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 42px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 24px;
+        color: #888;
+      }
+    }
+
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .lText {
+      grid-area: l-text;
+    }
+    .rText {
+      grid-area: r-text;
+    }
+    .lImage {
+      grid-area: l-image;
+    }
+    .rImage {
+      grid-area: r-image;
+    }
+
+    .button {
+      align-self: flex-start;
+      padding: 13px 30px;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background-color: #ff6b81;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.5;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #081828;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.strip {
+  width: 100%;
+  background-color: #ff6b81;
+  padding: 130px;
+  display: grid;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+
+  .header {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 80px;
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .stats {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+}
