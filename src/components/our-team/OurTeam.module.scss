@@ -1,0 +1,29 @@
+.ourTeam {
+  display: grid;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 100px 0;
+
+  @media screen and (max-width: 426px) {
+    padding: 50px 0;
+  }
+  .header {
+    text-align: center;
+    margin: 0px 25%;
+    margin-bottom: 80px;
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 426px) {
+      grid-template-columns: 1fr;
+      padding: 12px;
+    }
+  }
+}

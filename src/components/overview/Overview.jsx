@@ -22,10 +22,10 @@ export default function Overview() {
               <button className={styles.button}>Get Started</button>
             </div>
             <div className={classNames(styles.image, styles.rImage)}>
-              <img src="/app-ss1.png" />
+              <img src="/assets/images/app-ss1.png" />
             </div>
             <div className={classNames(styles.image, styles.lImage)}>
-              <img src="/app-ss2.png" />
+              <img src="/assets/images/app-ss2.png" />
             </div>
             <div className={classNames(styles.text, styles.rText)}>
               <IconBox icon={faTable} />

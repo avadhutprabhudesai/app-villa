@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./PricePlans.module.scss";
 import PricePlan from "./price-plan/PricePlan";
+import SectionHeader from "../section-header/SectionHeader";
 
 const plans = [
   {
@@ -54,12 +55,11 @@ export default function PricePlans() {
     <div className={styles.pricePlans}>
       <div className="container">
         <div className={styles.header}>
-          <p className={styles.title}>Pricing</p>
-          <h2>Pricing plan</h2>
-          <p className={styles.text}>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form.
-          </p>
+          <SectionHeader
+            title="Pricing"
+            heading="Pricing Plan"
+            text="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+          />
         </div>
 
         <div className={styles.list}>
