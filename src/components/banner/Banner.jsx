@@ -27,7 +27,7 @@ export default function Banner() {
             </div>
           </div>
           <div className={styles.image}>
-            <img src="/bg-banner.png" />
+            <img src="/assets/images/bg-banner.png" />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Banner from "@/components/banner/Banner";
 import FeaturesList from "@/components/features-list/FeaturesList";
 import Overview from "@/components/overview/Overview";
 import PricePlans from "@/components/price-plans/PricePlans";
+import OurTeam from "@/components/our-team/OurTeam";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,6 +33,7 @@ export default function Home() {
         <FeaturesList />
         <Overview />
         <PricePlans />
+        <OurTeam />
       </main>
     </>
   );
