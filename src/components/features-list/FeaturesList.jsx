@@ -1,5 +1,4 @@
 import { features } from "@/data/data";
-import classNames from "classnames";
 import Feature from "../feature/Feature";
 import styles from "./Featureslist.module.scss";
 
